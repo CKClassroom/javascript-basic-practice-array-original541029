@@ -1,14 +1,22 @@
-var people = ['Greg', 'Mary', 'Devon', 'James'];
+let people = ['Greg', 'Mary', 'Devon', 'James'];
 
-// 1. Using a loop, iterate through this array and console.log all of the people.
 
-// 2. Write the command to remove "Greg" from the array.
+for (let val of people) {
+  console.log(val);
+}
 
-// 3. Write the command to remove "James" from the array.
+const removeGreg = people.splice(0, 1);
+console.log(people)
 
-// 4. Write the command to add "Matt" to the front of the array.
+const removeJames = people.splice(2, 1);
+console.log(people)
 
-// 5. Write the command to add your name to the end of the array.
+let addMatt=people.push("Matt");
+console.log(people);
+
+let addIvy=people.push("Ivy");
+console.log(people);
+
 
 // 6. Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
 
