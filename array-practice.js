@@ -36,15 +36,23 @@ function troughLoop(){
   }
 }
 
-
-
 // 7. Write the command to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
 let newArray = people.slice(2,4);
-console.log(newArray)
+console.log(newArray);
 
 // 8. Write the command that gives the indexOf where "Mary" is located.
+console.log(people.indexOf("Mary"));
 
-console.log(people.indexOf("Mary"))
 // 9. Write the command that gives the indexOf where "Foo" is located (this should return -1).
+console.log(people.indexOf("Foo"));
 
 // 10. Redefine the people variable with the value you started with. Using the splice command, remove "Devon" from the array and add "Elizabeth" and "Artie". Your array should look like this when you are done ["Greg", "Mary", "Elizabeth", "Artie", "James"].
+let aryFront=people.unshift("Greg")
+console.log(people)
+people.splice(1,1);
+console.log(people)
+people.splice(2,2);
+console.log(people)
+let newAry=people.concat(["Elizabeth", "Artie", "James"])
+console.log(newAry)
+
